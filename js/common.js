@@ -177,7 +177,7 @@ function lazyScrollSection(anchor, speed) {
     anchor.on('click', function (e) {
         var href = $(this).attr("href");
         // privacy policy should open in new tab
-        if (href !== 'privacy-policy.html') {
+        if (href !== 'privacy-policy.html' && href !== 'terms-conditions.html') {
             e.preventDefault();
             $("html, body").animate({scrollTop: $(href).offset().top}, speed);
         }
