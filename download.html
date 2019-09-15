@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya|Roboto:400,500" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+    <script>
+        let userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        if (/windows phone/i.test(userAgent)) {
+            console.log("Windows Phone");
+        } else if (/android/i.test(userAgent)) {
+            window.location = "https://play.google.com/apps/testing/com.particle.signumcity";
+        } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            window.location = "ya.ru";
+        } else {
+            console.log("unknown");
+        }
+    </script>
+</head>
+<body>
+    <div class="p-container">
+    HELLO WORLD!
+    </div>
+</body>
+</html>
