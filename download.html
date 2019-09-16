@@ -14,9 +14,10 @@
         } else if (/android/i.test(userAgent)) {
             window.location = "https://play.google.com/apps/testing/com.particle.signumcity";
         } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-            window.location = "ya.ru";
+            window.location = "https://testflight.apple.com/join/UJENSGvz";
         } else {
-            console.log("unknown");
+            window.location = "https://signum.city/"
+            // console.log("unknown");
         }
     </script>
 </head>
